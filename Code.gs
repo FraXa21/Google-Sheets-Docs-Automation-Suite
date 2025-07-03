@@ -1,6 +1,6 @@
 function transferDataByHeader() {
   const sourceSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
-  const targetSpreadsheetId = "1EJ_5Py5vgsYgbugMOsi8VKVQOAkVlYkQd4LaHxtmS88";
+  const targetSpreadsheetId = "CHANGE_YOUR_ID";
   const targetSheetName = "Sheet1";
   const targetSheet = SpreadsheetApp.openById(targetSpreadsheetId).getSheetByName(targetSheetName);
 
@@ -56,8 +56,8 @@ function transferDataByHeader() {
 }
 
 function mailMergeToDocsAndPDFs() {
-  const templateId = '1_OdhdJKd6YsgLbsAaYSJTLrIbuVnNWhBBDH9RfmDEHU'; // ID Google Docs template
-  const folderId = '1FTpIj-Y_CR86qFvYTses3Fq0fsrA3-e2'; // Folder untuk output individual docs & pdf
+  const templateId = 'CHANGE_YOUR_ID'; // ID Google Docs template
+  const folderId = 'CHANGE_YOUR_ID'; // Folder untuk output individual docs & pdf
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
   const data = sheet.getDataRange().getValues();
   const headers = data[0];
@@ -111,8 +111,8 @@ function getLastDataRow (data,keyCol = 3){
 }
 
 async function combinePDFs() {
-  const sourceFolderId = '1FTpIj-Y_CR86qFvYTses3Fq0fsrA3-e2'; // Folder berisi PDF hasil mail merge
-  const targetFolderId = '1UbtEipzy_U-_IXKdWCH49k7iZNUoMwCr'; // Folder untuk menyimpan hasil gabungan PDF
+  const sourceFolderId = 'CHANGE_YOUR_ID'; // Folder berisi PDF hasil mail merge
+  const targetFolderId = 'CHANGE_YOUR_ID'; // Folder untuk menyimpan hasil gabungan PDF
 
   const sourceFolder = DriveApp.getFolderById(sourceFolderId);
   const targetFolder = DriveApp.getFolderById(targetFolderId);
