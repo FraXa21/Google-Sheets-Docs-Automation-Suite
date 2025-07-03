@@ -43,17 +43,17 @@ To use these scripts, you'll need a Google Account and access to Google Sheets, 
 **Configuration**
 Before running the scripts, you need to update the IDs and names within the code:
 - transferDataByHeader function:
-  - targetSpreadsheetId: Replace "1EJ_5Py5vgsYgbugMOsi8VKVQOAkVlYkQd4LaHxtmS88" with your target Google Sheet ID.
+  - targetSpreadsheetId: Replace "CHANGE_YOUR_ID" with your target Google Sheet ID.
   - targetSheetName: If your target sheet has a different name, update "Sheet1".
   - dateKeywords: Customize the array ["dated", "tanggal pembelian"] if your date columns have different header names.
 
 - mailMergeToDocsAndPDFs function:
-  - templateId: Replace '1_OdhdJKd6YsgLbsAaYSJTLrIbuVnNWhBBDH9RfmDEHU' with your Google Docs template ID.
-  - folderId: Replace '1FTpIj-Y_CR86qFvYTses3Fq0fsrA3-e2' with the ID of the folder where individual Docs/PDFs will be temporarily stored.
+  - templateId: Replace 'CHANGE_YOUR_ID' with your Google Docs template ID.
+  - folderId: Replace 'CHANGE_YOUR_ID' with the ID of the folder where individual Docs/PDFs will be temporarily stored.
 
 - combinePDFs function:
-  - sourceFolderId: Replace '1FTpIj-Y_CR86qFvYTses3Fq0fsrA3-e2' with the ID of the folder containing the individual PDFs to be combined (this should be the same as folderId in mailMergeToDocsAndPDFs).
-  - targetFolderId: Replace '1UbtEipzy_U-_IXKdWCH49k7iZNUoMwCr' with the ID of the folder where the final combined PDF will be saved.
+  - sourceFolderId: Replace 'CHANGE_YOUR_ID' with the ID of the folder containing the individual PDFs to be combined (this should be the same as folderId in mailMergeToDocsAndPDFs).
+  - targetFolderId: Replace 'CHANGE_YOUR_ID' with the ID of the folder where the final combined PDF will be saved.
 
 - getLastDataRow function:
   - keyCol: By default, it checks column 3 (index 2) for data to determine the last row. Adjust 3 if your key column is different.
